@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Services: Pricing Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Our Pricing</h1>
+      <!-- <div class="toggle">
+        <label>Annually </label>
+        <div class="toggle-btn">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label class="sub" id="sub" for="checkbox">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label> Monthly</label>
+      </div> -->
+      <div class="container">
+        <form>
+          <label>
+            <input type="radio" onchange="setValue(event)" name="radio" value="1" checked />
+            <span>Monthly</span>
+          </label>
+          <label>
+            <input type="radio" onchange="setValue(event)" name="radio" value="2" />
+            <span>Quarterly</span>
+          </label>
+          <label>
+            <input type="radio" onchange="setValue(event)" name="radio" value="3"/>
+            <span>Annually</span>
+          </label>
+        </form>
+      </div>
+
+      <div class="select-box">
+        <select name="" id="setCurrency" onchange="setCurrency()">
+          <option value="" disabled>---Select Currency---</option>
+          <option value="C1">USD</option>
+        </select>
+      </div>
+
+    </header>
+    <div class="cards">
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Basic</li>
+          <li id="basic" class="price bottom-bar">&#x24;15</li>
+          <li class="bottom-bar">420 GB Storage</li>
+          <li class="bottom-bar">13 Users Allowed</li>
+          <li class="bottom-bar">Send up to 9 GB</li>
+          <li><button class="btn">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card active">
+        <ul>
+          <li class="pack">Recommended</li>
+          <li id="professional" class="price bottom-bar">&#x24;20</li>
+          <li class="bottom-bar">4 TB Storage</li>
+          <li class="bottom-bar">20 Users Allowed</li>
+          <li class="bottom-bar">Send up to 25 GB</li>
+          <li><button class="btn active-btn">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Pro Pack</li>
+          <li id="master" class="price bottom-bar">&#x24;23</li>
+          <li class="bottom-bar">10 TB Storage</li>
+          <li class="bottom-bar">50 Users Allowed</li>
+          <li class="bottom-bar">Send up to 36 GB</li>
+          <li><button class="btn">Learn More</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
